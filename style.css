@@ -1654,3 +1654,69 @@ body:has(dialog[open]) {
   background: transparent;
   backdrop-filter: none;
 }
+
+/* Minimal V2 grid: photos and type sit directly on the menu paper. */
+.menu-v2 .dish-grid:not(.dish-list) .dish {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.menu-v2 .dish-grid:not(.dish-list) .dish:hover {
+  transform: none;
+  box-shadow: none;
+}
+.menu-v2 .dish-grid:not(.dish-list) .dish-image-button {
+  border-radius: 6px;
+}
+.menu-v2 .dish-grid:not(.dish-list) .dish-content {
+  padding: 16px 0 20px;
+}
+.menu-v2 .dish-grid:not(.dish-list) .dish-top {
+  margin-bottom: 10px;
+}
+.menu-v2 .dish-grid:not(.dish-list) .chapter-dishes {
+  gap: 28px 24px;
+}
+
+/* Search and view controls share one toolbar. */
+.menu-v2 .controls {
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-bottom: 24px;
+}
+.menu-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.menu-v2 .menu-tools .search {
+  width: clamp(180px, 24vw, 320px);
+}
+.menu-tools .view-switch {
+  flex-shrink: 0;
+}
+@media (max-width: 800px) {
+  .menu-v2 .controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .menu-v2 .menu-tools .search {
+    flex: 1;
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .menu-v2 .menu-tools {
+    gap: 6px;
+  }
+  .menu-v2 .menu-tools .view-switch button {
+    font-size: 0;
+    gap: 0;
+    padding: 0 10px;
+    min-width: 40px;
+  }
+}
+
+.menu-v2 .search {
+  border-radius: 999px;
+}
