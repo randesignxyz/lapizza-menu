@@ -5,8 +5,8 @@
     "name": "Calamari Fritti",
     "description": "Lightly fried calamari.",
     "price": 6.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
+    "image": "assets/images/fried calamari.jpg",
+    "imageAlt": "Calamari Fritti"
   },
   {
     "id": "starter1",
@@ -14,8 +14,8 @@
     "name": "Bruschette Miste",
     "description": "Sourdough bread with fresh tomatoes, fresh pesto and spicy eggplant.",
     "price": 4.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
+    "image": "assets/images/Bruschetta.jpg",
+    "imageAlt": "Bruschette Miste on sourdough bread"
   },
   {
     "id": "starter2",
@@ -32,8 +32,8 @@
     "name": "Burrata",
     "description": "Fresh burrata with anchovies, balsamic caviar, roasted cherry tomatoes and sourdough bread.",
     "price": 9,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
+    "image": "assets/images/Burrata starter menu.jpg",
+    "imageAlt": "Burrata"
   },
   {
     "id": "starter4",
@@ -41,8 +41,8 @@
     "name": "Fegatini di Pollo",
     "description": "Chicken liver pate with onion and tomato jam, served with sourdough bread.",
     "price": 4.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
+    "image": "assets/images/Chicken liver Pate.jpg",
+    "imageAlt": "Fegatini di Pollo"
   },
   {
     "id": "starter5",
@@ -50,8 +50,8 @@
     "name": "Arancini Bolognese",
     "description": "Fried arborio risotto rice with Bolognese sauce and mozzarella.",
     "price": 6.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
+    "image": "assets/images/Arancini.jpg",
+    "imageAlt": "Arancini Bolognese"
   },
   {
     "id": "starter6",
@@ -59,8 +59,8 @@
     "name": "Tartare di Filetto",
     "description": "Beef tenderloin tartare.",
     "price": 7.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
+    "image": "assets/images/Beef Tartare.jpg",
+    "imageAlt": "Tartare di Filetto"
   },
   {
     "id": "starter7",
@@ -68,8 +68,8 @@
     "name": "Carpaccio di Tonno",
     "description": "Tuna saku carpaccio with olive oil vinaigrette.",
     "price": 7.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
+    "image": "assets/images/Tuna. Carpaccio.jpg",
+    "imageAlt": "Carpaccio di Tonno"
   },
   {
     "id": "starter8",
@@ -77,8 +77,8 @@
     "name": "Caesar Salad",
     "description": "Chicken, mixed salad, croutons and Parmesan cheese.",
     "price": 7.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
+    "image": "assets/images/Cesar salad.jpg",
+    "imageAlt": "Caesar Salad"
   },
   {
     "id": "starter9",
@@ -86,8 +86,8 @@
     "name": "Insalata di Tonno",
     "description": "Fresh seared saku tuna, tomatoes and mixed salad.",
     "price": 7.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
+    "image": "assets/images/Tuna Salad.jpg",
+    "imageAlt": "Insalata di Tonno"
   },
   {
     "id": "starter11",
@@ -113,8 +113,8 @@
     "name": "Tagliolini al Pesto",
     "description": "Homemade tagliolini with fresh basil pesto.",
     "price": 6.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Foto to use for pesto.jpg",
+    "imageAlt": "Tagliolini al Pesto"
   },
   {
     "id": "pasta1",
@@ -122,8 +122,8 @@
     "name": "Tagliolini alla Carbonara",
     "description": "Guanciale, egg yolk and Parmesan cheese.",
     "price": 8.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Carbonara.jpg",
+    "imageAlt": "Tagliolini alla Carbonara"
   },
   {
     "id": "pasta2",
@@ -131,8 +131,8 @@
     "name": "Tagliatelle allo Scoglio",
     "description": "Homemade tagliatelle with prawns, squid, white clams, white wine and cherry tomatoes.",
     "price": 12.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Seafood pasta.jpg",
+    "imageAlt": "Tagliatelle allo Scoglio"
   },
   {
     "id": "pasta3",
@@ -140,8 +140,8 @@
     "name": "Tagliatelle al Nero di Seppia",
     "description": "Black-ink tagliatelle with white clams and white wine.",
     "price": 8.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Foto to use for black ink pasta.jpg",
+    "imageAlt": "Tagliatelle al Nero di Seppia"
   },
   {
     "id": "pasta4",
@@ -149,8 +149,8 @@
     "name": "Tagliatelle alla Bolognese",
     "description": "Homemade tagliatelle with Bolognese sauce.",
     "price": 9.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Foto to use for bolognese.jpg",
+    "imageAlt": "Tagliatelle alla Bolognese"
   },
   {
     "id": "pasta5",
@@ -158,8 +158,8 @@
     "name": "Pappardelle con le Polpette",
     "description": "Homemade pappardelle with meatballs and tomato sauce.",
     "price": 8.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Pappardelle meatball.jpg",
+    "imageAlt": "Pappardelle con le Polpette"
   },
   {
     "id": "pasta6",
@@ -167,8 +167,8 @@
     "name": "Gnocchi alla Sorrentina",
     "description": "Homemade potato gnocchi, oven-baked with fresh mozzarella and tomatoes.",
     "price": 8.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Gnocchi sorrentina.jpg",
+    "imageAlt": "Gnocchi alla Sorrentina"
   },
   {
     "id": "pasta7",
@@ -176,8 +176,8 @@
     "name": "Gnocchi al Tartufo",
     "description": "Homemade potato gnocchi with truffle paste, guanciale and mushrooms.",
     "price": 12,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Gnocchi truffle.jpg",
+    "imageAlt": "Gnocchi al Tartufo"
   },
   {
     "id": "pasta8",
@@ -194,8 +194,8 @@
     "name": "Tortelloni",
     "description": "Handmade tortelloni filled with pork, mortadella and cooked ham, in sweet garlic sauce.",
     "price": 12.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Tortelloni in sweet garlic sauce.jpg",
+    "imageAlt": "Tortelloni"
   },
   {
     "id": "pasta10",
@@ -203,8 +203,8 @@
     "name": "Ravioli Ricotta e Spinaci",
     "description": "Ricotta and spinach ravioli.",
     "price": 7.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Ravioli ricotta and spinach.jpg",
+    "imageAlt": "Ravioli Ricotta e Spinaci"
   },
   {
     "id": "pasta11",
@@ -212,8 +212,8 @@
     "name": "Lasagna",
     "description": "Oven-baked homemade lasagna with Bolognese sauce, bechamel and Parmesan.",
     "price": 12,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Foto to use for lasagna.jpg",
+    "imageAlt": "Lasagna"
   },
   {
     "id": "pasta12",
@@ -221,8 +221,8 @@
     "name": "Tagliolini all'Arrabbiata",
     "description": "Homemade tagliolini with tomato sauce and chilli.",
     "price": 6.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
+    "image": "assets/images/Arrabbiata.jpg",
+    "imageAlt": "Tagliolini all'Arrabbiata"
   },
   {
     "id": "pizza0",
@@ -230,8 +230,8 @@
     "name": "Marinara",
     "description": "Tomato sauce, garlic and oregano.",
     "price": 6,
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pizza serving suggestion"
+    "image": "assets/images/Pizza marinara.jpg",
+    "imageAlt": "Marinara"
   },
   {
     "id": "pizza1",
@@ -239,8 +239,8 @@
     "name": "Bianca",
     "description": "White pizza with olive oil and rosemary.",
     "price": 4,
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pizza serving suggestion"
+    "image": "assets/images/White pizza.jpg",
+    "imageAlt": "Bianca"
   },
   {
     "id": "pizza2",
@@ -248,8 +248,8 @@
     "name": "Napoletana",
     "description": "Tomato sauce, anchovies, capers, olives and fresh mozzarella.",
     "price": 12,
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pizza serving suggestion"
+    "image": "assets/images/Pizza napoletana.jpg",
+    "imageAlt": "Napoletana"
   },
   {
     "id": "pizza3",
@@ -257,8 +257,8 @@
     "name": "Margherita",
     "description": "Tomato sauce, fresh basil and fresh mozzarella.",
     "price": 10,
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pizza serving suggestion"
+    "image": "assets/images/Margerita.jpg",
+    "imageAlt": "Margherita"
   },
   {
     "id": "pizza4",
@@ -266,8 +266,8 @@
     "name": "Prosciutto e Funghi",
     "description": "Cooked ham, mixed mushrooms and mozzarella.",
     "price": 12,
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pizza serving suggestion"
+    "image": "assets/images/Pizza ham mushrooms.jpg",
+    "imageAlt": "Prosciutto e Funghi"
   },
   {
     "id": "pizza5",
@@ -275,8 +275,8 @@
     "name": "Di Parma",
     "description": "Tomato sauce, Parma ham, rocket salad and Parmesan shavings.",
     "price": 14,
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pizza serving suggestion"
+    "image": "assets/images/Pizza di Parma.jpg",
+    "imageAlt": "Di Parma"
   },
   {
     "id": "pizza6",
@@ -284,8 +284,8 @@
     "name": "Burrata e Tartufo",
     "description": "Burrata, fresh black truffle and fresh mozzarella.",
     "price": 25,
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pizza serving suggestion"
+    "image": "assets/images/Pizza burrata cheese.jpg",
+    "imageAlt": "Burrata e Tartufo"
   },
   {
     "id": "pizza7",
@@ -293,8 +293,8 @@
     "name": "Salame Piccante",
     "description": "Tomato sauce, spicy spianata salami and fresh mozzarella.",
     "price": 12,
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pizza serving suggestion"
+    "image": "assets/images/Pizza salame piccante.jpg",
+    "imageAlt": "Salame Piccante"
   },
   {
     "id": "pizza8",
@@ -302,8 +302,8 @@
     "name": "Calzone",
     "description": "",
     "price": 12,
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pizza serving suggestion"
+    "image": "assets/images/Calzone.jpg",
+    "imageAlt": "Calzone"
   },
   {
     "id": "main0",
@@ -311,8 +311,8 @@
     "name": "Filetto di Spigola alla Griglia",
     "description": "Grilled sea bass fillet with pesto spaghetti, zucchini and mashed potatoes.",
     "price": 12.5,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Main courses serving suggestion"
+    "image": "assets/images/Seabass photo.jpg",
+    "imageAlt": "Filetto di Spigola alla Griglia"
   },
   {
     "id": "main1",
@@ -320,8 +320,8 @@
     "name": "Lombatello",
     "description": "Grilled hanger steak with grilled broccoli, mixed salad and French fries.",
     "price": 25,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Main courses serving suggestion"
+    "image": "assets/images/Beef Anglet.jpg",
+    "imageAlt": "Lombatello"
   },
   {
     "id": "main2",
@@ -329,8 +329,8 @@
     "name": "Bistecca di Manzo",
     "description": "Grilled rib-eye steak with mashed potatoes, long beans and mixed salad.",
     "price": 28,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Main courses serving suggestion"
+    "image": "assets/images/Rib eye steak.jpg",
+    "imageAlt": "Bistecca di Manzo"
   },
   {
     "id": "main3",
@@ -338,8 +338,8 @@
     "name": "Costata di Manzo",
     "description": "Slow-cooked beef rib in red wine sauce, with broccoli and sweet potato mash.",
     "price": 25,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Main courses serving suggestion"
+    "image": "assets/images/Cow rib dish.jpg",
+    "imageAlt": "Costata di Manzo"
   },
   {
     "id": "main4",
@@ -347,8 +347,8 @@
     "name": "Filetto di Maiale",
     "description": "Slow-cooked, grilled pork tenderloin with pineapple salsa, roasted pumpkin and baby potatoes.",
     "price": 12.5,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Main courses serving suggestion"
+    "image": "assets/images/Pork tenderloin.jpg",
+    "imageAlt": "Filetto di Maiale"
   },
   {
     "id": "main5",
@@ -356,8 +356,8 @@
     "name": "Pollo alla Griglia",
     "description": "Half a roasted local spring chicken with white cabbage, roasted pumpkin and grilled lime.",
     "price": 12.5,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Main courses serving suggestion"
+    "image": "assets/images/Chicken dish.jpg",
+    "imageAlt": "Pollo alla Griglia"
   },
   {
     "id": "main6",
@@ -365,8 +365,8 @@
     "name": "Filetto di Tonno Rosso",
     "description": "Tuna saku fillet with rosemary sauce and sweet potato mash.",
     "price": 12.5,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Main courses serving suggestion"
+    "image": "assets/images/Seared Tuna Sako.jpg",
+    "imageAlt": "Filetto di Tonno Rosso"
   },
   {
     "id": "dessert0",
@@ -374,8 +374,8 @@
     "name": "Cioccolato Fondente",
     "description": "Chocolate fondant.",
     "price": 6,
-    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Desserts serving suggestion"
+    "image": "assets/images/chocolate fondant.jpg",
+    "imageAlt": "Cioccolato Fondente"
   },
   {
     "id": "dessert1",
@@ -383,8 +383,8 @@
     "name": "Tiramisu",
     "description": "",
     "price": 6,
-    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Desserts serving suggestion"
+    "image": "assets/images/Tiramisu.jpg",
+    "imageAlt": "Tiramisu"
   },
   {
     "id": "dessert2",

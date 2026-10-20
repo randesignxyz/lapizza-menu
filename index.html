@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link href="style.css?v=2-rounded-search" rel="stylesheet" />
+    <link href="style.css?v=2-poppins-titles" rel="stylesheet" />
   </head>
   <body class="menu-v2">
     <dialog id="bookCover" aria-label="La Pizza menu cover">
@@ -33,10 +33,12 @@
           fetchpriority="high"
         />
         <span class="cover-cuisine" aria-hidden="true">CUCINA ITALIANA</span>
-        <span class="cover-prompt"
-          >Tap to open <span aria-hidden="true">·</span> Swipe left
-          <span aria-hidden="true">←</span></span
-        >
+        <span class="cover-prompt">
+          <svg class="cover-pizza" viewBox="0 0 160 150" aria-hidden="true">
+            <path d="M10 75 133 14Q155 75 133 136Z" fill="none" stroke="var(--red)" stroke-width="3" stroke-linejoin="round" />
+          </svg>
+          <span class="cover-prompt-label">Open Me</span>
+        </span>
       </button>
     </dialog>
     <a class="skip" href="#menu">Skip to menu</a>
@@ -78,7 +80,7 @@
                   type="search"
                   placeholder="Find a dish or ingredient"
                   aria-label="Search dishes and ingredients"
-                /><kbd>/</kbd></label
+                /></label
               >
               <div
                 id="menuView"
@@ -89,7 +91,7 @@
                 <button
                   type="button"
                   data-menu-view="grid"
-                  aria-pressed="false"
+                  aria-pressed="true"
                   aria-controls="dishes"
                 >
                   <svg
@@ -110,7 +112,7 @@
                 <button
                   type="button"
                   data-menu-view="list"
-                  aria-pressed="true"
+                  aria-pressed="false"
                   aria-controls="dishes"
                 >
                   <svg

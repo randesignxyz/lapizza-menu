@@ -56,11 +56,12 @@ export async function initMenu() {
     $('resultCount').textContent =
       `${filtered.length} ${filtered.length === 1 ? 'dish' : 'dishes'}`;
     $('dishes').replaceChildren(
-      ...createMenuChapters(filtered, categories.slice(1), {
-        saved,
-        onToggle: toggle,
-        onDetail: detail,
-      }),
+      ...createMenuChapters(
+        filtered,
+        categories.slice(1),
+        { saved, onToggle: toggle, onDetail: detail },
+        { showHeadings: category === 'All dishes' || Boolean(q) },
+      ),
     );
     $('empty').hidden = filtered.length > 0;
   }
@@ -118,6 +119,7 @@ export async function initMenu() {
   });
   function selectCategory(name) {
     category = name;
+    $('dishes').scrollTop = 0;
     $('search').value = '';
     render();
   }
@@ -145,6 +147,7 @@ export async function initMenu() {
           () => {
             category = name;
             render();
+            $('dishes').scrollTop = 0;
           },
           { backwards },
         );

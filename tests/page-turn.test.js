@@ -77,3 +77,30 @@ test('cancelled browser animations still commit the category and release the pag
   assert.equal(updated, true);
   assert.equal(page.inert, false);
 });
+
+test('backward turns lay the incoming page over the outgoing sheet', async () => {
+  const page = mockPage(() => {});
+  let updated = false;
+  const snapshots = [];
+  const turn = createPageTurn(page, {
+    reducedMotion: () => false,
+    createSheet() {
+      const snapshot = { incoming: updated, removed: false };
+      snapshots.push(snapshot);
+      return {
+        animate(frames) {
+          assert.equal(snapshot.incoming, true);
+          assert.equal(snapshots[0].removed, false);
+          assert.equal(frames[0].transform, 'rotateY(-100deg)');
+          assert.equal(frames.at(-1).transform, 'rotateY(0deg)');
+          return { finished: Promise.resolve(), cancel() {} };
+        },
+        remove() { snapshot.removed = true; },
+      };
+    },
+  });
+  await turn(() => { updated = true; }, { backwards: true });
+  assert.equal(snapshots.length, 2);
+  assert.ok(snapshots.every((snapshot) => snapshot.removed));
+  assert.equal(page.inert, false);
+});

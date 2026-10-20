@@ -6,7 +6,7 @@ function make(tag, cls, text) {
   if (text !== undefined) e.textContent = text;
   return e;
 }
-export function createDishCard(d, { saved, onToggle, onDetail }) {
+export function createDishCard(d, { saved, onToggle }) {
   let c = make('article', 'dish'),
     top = make('div', 'dish-top'),
     label = make('span', 'category-label', d.category),
@@ -19,24 +19,18 @@ export function createDishCard(d, { saved, onToggle, onDetail }) {
   s.setAttribute('aria-pressed', String(saved.has(d.id)));
   s.onclick = () => onToggle(d.id);
   top.append(label, s);
-  let title = make('button', 'dish-name', d.name);
-  title.onclick = () => onDetail(d);
+  let title = make('h5', 'dish-name', d.name);
   let desc = make('p', '', d.description || 'Ask our team for more details.');
   let bottom = make('div', 'dish-bottom');
-  bottom.append(
-    make('span', 'price', money(d.price)),
-    make('span', 'view', 'View dish ↗'),
-  );
-  const imageButton = make('button', 'dish-image-button');
-  imageButton.type = 'button';
-  imageButton.setAttribute('aria-label', `View ${d.name}`);
-  imageButton.onclick = () => onDetail(d);
+  bottom.append(make('span', 'price', money(d.price)));
+  const imageContainer = make('div', 'dish-image-button');
   const image = document.createElement('img');
   image.className = 'dish-image';
   image.width = 800;
   image.height = 600;
   image.loading = 'lazy';
   image.decoding = 'async';
+  image.draggable = false;
   image.alt = d.imageAlt || d.name;
   const fallback = new URL(
     '../../assets/images/dish-placeholder.svg',
@@ -52,25 +46,35 @@ export function createDishCard(d, { saved, onToggle, onDetail }) {
     { once: true },
   );
   image.src = d.image || fallback;
-  imageButton.append(image);
+  imageContainer.append(image);
   const content = make('div', 'dish-content');
   content.append(top, title, desc, bottom);
-  c.append(imageButton, content);
+  c.append(imageContainer, content);
   return c;
 }
 
 // Group filtered dishes without losing the menu's category order.
-export function createMenuChapters(items, categories, actions) {
+export function createMenuChapters(
+  items,
+  categories,
+  actions,
+  { showHeadings = true } = {},
+) {
   return categories.flatMap((category, index) => {
     const dishes = items.filter((dish) => dish.category === category);
     if (!dishes.length) return [];
     const chapter = make('section', 'menu-chapter');
     const heading = make('h4', 'chapter-title', category);
     heading.id = `chapter-${index}`;
-    chapter.setAttribute('aria-labelledby', heading.id);
+    if (showHeadings) {
+      chapter.setAttribute('aria-labelledby', heading.id);
+    } else {
+      chapter.setAttribute('aria-label', category);
+    }
     const list = make('div', 'chapter-dishes');
     list.append(...dishes.map((dish) => createDishCard(dish, actions)));
-    chapter.append(heading, list);
+    if (showHeadings) chapter.append(heading);
+    chapter.append(list);
     return [chapter];
   });
 }

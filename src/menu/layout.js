@@ -2,11 +2,11 @@ const STORAGE_KEY = 'lapizza-v2-menu-view';
 
 export function readMenuView(storage) {
   try {
-    return (storage ?? globalThis.localStorage).getItem(STORAGE_KEY) === 'grid'
-      ? 'grid'
-      : 'list';
+    return (storage ?? globalThis.localStorage).getItem(STORAGE_KEY) === 'list'
+      ? 'list'
+      : 'grid';
   } catch {
-    return 'list';
+    return 'grid';
   }
 }
 

@@ -11,15 +11,24 @@ function createTurningSheet(page) {
   sheet
     .querySelectorAll('[id]')
     .forEach((element) => element.removeAttribute('id'));
+  const dishes = page.querySelector('#dishes');
+  const snapshotDishes = sheet.querySelector('.dish-grid');
+  if (dishes && snapshotDishes) {
+    snapshotDishes.style.flex = '1';
+    snapshotDishes.style.minHeight = '0';
+    snapshotDishes.style.overflowY = 'auto';
+    snapshotDishes.style.scrollbarGutter = 'stable';
+  }
   layer.append(sheet);
   page.parentElement.append(layer);
+  if (dishes && snapshotDishes) snapshotDishes.scrollTop = dishes.scrollTop;
   return {
     animate: (frames, options) => sheet.animate(frames, options),
     remove: () => layer.remove(),
   };
 }
 
-// The new page renders underneath a snapshot of the previous sheet.
+// Forward turns lift the old sheet; backward turns lay the previous page down.
 export function createPageTurn(
   page,
   {
@@ -45,32 +54,42 @@ export function createPageTurn(
           continue;
         }
         const sheet = createSheet(page);
+        let incomingSheet;
         let animation;
         try {
           update();
-          // Keep the incoming page visible throughout the slower turn.
-          animation = sheet.animate(
-            [
+          // A returning page swings back onto the outgoing page from the spine.
+          if (backwards) incomingSheet = createSheet(page);
+          animation = (incomingSheet || sheet).animate(
+            backwards
+              ? [
+                  { transform: 'rotateY(-100deg)', filter: 'brightness(.8)', opacity: 0 },
+                  { transform: 'rotateY(-65deg)', filter: 'brightness(.88)', opacity: 1, offset: 0.35 },
+                  { transform: 'rotateY(0deg)', filter: 'brightness(1)', opacity: 1 },
+                ]
+              : [
               {
                 transform: 'rotateY(0deg)',
                 filter: 'brightness(1)',
                 opacity: 1,
               },
               {
-                transform: `rotateY(${backwards ? 65 : -65}deg)`,
+                transform: 'rotateY(-65deg)',
                 filter: 'brightness(.88)',
                 opacity: 1,
                 offset: 0.65,
               },
               {
-                transform: `rotateY(${backwards ? 100 : -100}deg)`,
+                transform: 'rotateY(-100deg)',
                 filter: 'brightness(.8)',
                 opacity: 0,
               },
             ],
             {
               duration: 1050,
-              easing: 'cubic-bezier(.32, 0, .18, 1)',
+              easing: backwards
+                ? 'cubic-bezier(.22, .05, .25, 1)'
+                : 'cubic-bezier(.32, 0, .18, 1)',
               fill: 'forwards',
             },
           );
@@ -79,6 +98,7 @@ export function createPageTurn(
           // The live page is already updated if an animation is cancelled.
         } finally {
           animation?.cancel();
+          incomingSheet?.remove();
           sheet.remove();
         }
       }
