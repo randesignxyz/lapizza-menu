@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#7f2027" />
+    <meta
+      name="description"
+      content="Explore La Pizza's Italian menu. Browse starters, homemade pasta, pizza, main courses and desserts."
+    />
+    <title>La Pizza · A little taste of Italy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../ui-versions.css" />
+    <script type="module" src="../../src/version-switcher.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#menu">Skip to menu</a>
+    <header class="masthead">
+      <a href="#" class="brand" aria-label="La Pizza home"
+        >La<span>PIZZA</span><small>CUCINA ITALIANA</small></a
+      >
+      <div class="location">
+        <span class="dot"></span> PHNOM PENH <span class="divider">/</span> EST.
+        2026
+      </div>
+      <button
+        class="saved-top"
+        id="savedTop"
+        aria-label="Show favourite dishes"
+      >
+        ♡ <span>Favourites</span> <b id="savedCount">0</b>
+      </button>
+    </header>
+    <main>
+      <section
+        class="hero"
+        aria-label="Featured menu categories"
+        aria-roledescription="carousel"
+        tabindex="0"
+      >
+        <div class="hero-copy">
+          <p class="eyebrow">BUON APPETITO</p>
+          <h1>A little taste<br />of <span>Italy.</span></h1>
+          <p>
+            Good food. Great company.<br />Find your next favourite at La Pizza.
+          </p>
+          <a class="hero-link" href="#menu">Explore the menu <span>↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-ring"></div>
+          <svg viewBox="0 0 400 400">
+            <defs>
+              <radialGradient id="dough">
+                <stop stop-color="#f0c287" />
+                <stop offset=".86" stop-color="#e4ab6c" />
+                <stop offset="1" stop-color="#ba7542" />
+              </radialGradient>
+            </defs>
+            <ellipse
+              cx="202"
+              cy="208"
+              rx="165"
+              ry="156"
+              fill="#4c1116"
+              opacity=".3"
+            />
+            <circle cx="195" cy="193" r="156" fill="url(#dough)" />
+            <circle cx="195" cy="193" r="135" fill="#a93c2a" />
+            <g fill="#f5e4bd">
+              <path d="M125 96q54-31 61 17t-25 52q-47 9-48-21t12-48" />
+              <path d="M228 91q52-8 58 38t-31 46q-39-3-42-32t15-52" />
+              <path d="M92 196q26-35 57-14t16 54q-26 37-56 12t-17-52" />
+              <path d="M200 193q30-35 56-8t8 55q-17 28-47 12t-17-59" />
+              <path d="M150 266q30-32 62-5t9 42q-26 23-53 5t-18-42" />
+              <path d="M281 208q29-17 37 12t-11 41q-21 14-36-8t10-45" />
+            </g>
+            <g fill="#55744a" stroke="#365337" stroke-width="2">
+              <path d="M167 145q-33-50 12-52 22 25-12 52z" />
+              <path d="M260 208q-11-52 30-39 10 32-30 39z" />
+              <path d="M153 279q-46-3-28-37 35-10 28 37z" />
+              <path d="M221 289q18-46 41-10-9 29-41 10z" />
+            </g>
+            <g fill="#71412b">
+              <ellipse cx="84" cy="127" rx="7" ry="4" />
+              <ellipse cx="239" cy="53" rx="9" ry="4" />
+              <ellipse cx="315" cy="129" rx="4" ry="8" />
+              <ellipse cx="140" cy="52" rx="5" ry="3" />
+              <ellipse cx="72" cy="245" rx="5" ry="8" />
+              <ellipse cx="263" cy="323" rx="8" ry="4" />
+              <ellipse cx="122" cy="321" rx="9" ry="4" />
+            </g>
+            <g fill="#754c30" opacity=".5">
+              <circle cx="126" cy="117" r="2" />
+              <circle cx="191" cy="182" r="2" />
+              <circle cx="265" cy="147" r="2" />
+              <circle cx="184" cy="278" r="2" />
+              <circle cx="92" cy="208" r="2" />
+            </g></svg
+          ><span class="art-label"
+            >Made for sharing.<br />Remembered with love.</span
+          ><span class="hero-stamp">LA PIZZA<br />✦<br />CUCINA ITALIANA</span>
+        </div>
+        <div class="carousel-controls">
+          <span
+            id="slideStatus"
+            class="slide-status"
+            aria-live="polite"
+            aria-atomic="true"
+            >01 / 03 · Pizza</span
+          >
+          <div
+            class="carousel-dots"
+            role="group"
+            aria-label="Choose a featured category"
+          >
+            <button
+              aria-label="Show pizza slide"
+              aria-current="true"
+              data-slide="0"
+            ></button
+            ><button aria-label="Show pasta slide" data-slide="1"></button
+            ><button aria-label="Show desserts slide" data-slide="2"></button>
+          </div>
+          <div class="carousel-arrows">
+            <button id="previousSlide" aria-label="Previous featured category">
+              ←</button
+            ><button id="nextSlide" aria-label="Next featured category">
+              →
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="menu" class="menu-section">
+        <div class="menu-heading">
+          <div>
+            <p class="eyebrow">SOMETHING FOR EVERY APPETITE</p>
+            <h2>Our menu</h2>
+          </div>
+          <p>Italian favourites, one delicious choice at a time.</p>
+        </div>
+        <div class="controls">
+          <nav id="categories" aria-label="Menu categories"></nav>
+          <label class="search"
+            ><svg
+              width="19"
+              height="19"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <circle cx="10" cy="10" r="6.5" />
+              <path d="m15 15 6 6" /></svg
+            ><input
+              id="search"
+              type="search"
+              placeholder="Find a dish or ingredient"
+              aria-label="Search dishes and ingredients"
+            /><kbd>/</kbd></label
+          >
+        </div>
+        <div class="section-line">
+          <div>
+            <h3 id="categoryTitle">All dishes</h3>
+            <span id="resultCount" role="status" aria-live="polite"></span>
+          </div>
+          <div class="menu-actions">
+            <button id="favourites" class="filter" aria-pressed="false">
+              ♡ Saved dishes
+            </button>
+            <div
+              id="menuView"
+              class="view-switch"
+              role="group"
+              aria-label="Menu view"
+            >
+              <button
+                type="button"
+                data-menu-view="grid"
+                aria-pressed="true"
+                aria-controls="dishes"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="6" height="6" rx="1" />
+                  <rect x="12" y="2" width="6" height="6" rx="1" />
+                  <rect x="2" y="12" width="6" height="6" rx="1" />
+                  <rect x="12" y="12" width="6" height="6" rx="1" />
+                </svg>
+                Grid
+              </button>
+              <button
+                type="button"
+                data-menu-view="list"
+                aria-pressed="false"
+                aria-controls="dishes"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M7 4h11M7 10h11M7 16h11" />
+                  <path d="M2 4h2M2 10h2M2 16h2" stroke-width="2" />
+                </svg>
+                List
+              </button>
+            </div>
+          </div>
+        </div>
+        <noscript
+          ><p>
+            Please enable JavaScript to browse the menu, or ask our team for a
+            menu.
+          </p></noscript
+        >
+        <div id="dishes" class="dish-grid"></div>
+        <div id="empty" hidden>
+          <span>⌕</span>
+          <h3>No dishes found</h3>
+          <p>Try another ingredient or explore the full menu.</p>
+          <button id="reset">Show all dishes</button>
+        </div>
+        <aside class="allergy">
+          <span>ⓘ</span>
+          <div>
+            <strong>A little note before you choose</strong>
+            <p>
+              Have a food allergy or dietary requirement? Please speak with our
+              team before ordering.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <div class="brand">La<span>PIZZA</span></div>
+      <p>CUCINA ITALIANA · PHNOM PENH</p>
+      <p>Enjoy the moment. Savour every bite.</p>
+      <small>Prices shown in USD. Please order with our team.</small>
+    </footer>
+    <dialog id="detail" aria-labelledby="detailName">
+      <button class="close" aria-label="Close dish details">×</button>
+      <p class="eyebrow" id="detailCategory"></p>
+      <div class="detail-art" aria-hidden="true">✦</div>
+      <h2 id="detailName"></h2>
+      <p id="detailDescription"></p>
+      <div class="detail-bottom">
+        <strong id="detailPrice"></strong><button id="detailSave"></button>
+      </div>
+      <p class="detail-note">
+        Please speak with our team to order or ask about allergens.
+      </p>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

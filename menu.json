@@ -1,0 +1,398 @@
+[
+  {
+    "id": "starter0",
+    "category": "Starters",
+    "name": "Calamari Fritti",
+    "description": "Lightly fried calamari.",
+    "price": 6.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter1",
+    "category": "Starters",
+    "name": "Bruschette Miste",
+    "description": "Sourdough bread with fresh tomatoes, fresh pesto and spicy eggplant.",
+    "price": 4.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter2",
+    "category": "Starters",
+    "name": "Parma Ham wrap",
+    "description": "Parma ham wrap, fresh rocket salad and sourdough bread.",
+    "price": 8.5,
+    "image": "assets/images/parma-ham-wrap.jpg",
+    "imageAlt": "Parma ham wraps with rocket, sliced radish and sourdough on a white plate."
+  },
+  {
+    "id": "starter3",
+    "category": "Starters",
+    "name": "Burrata",
+    "description": "Fresh burrata with anchovies, balsamic caviar, roasted cherry tomatoes and sourdough bread.",
+    "price": 9,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter4",
+    "category": "Starters",
+    "name": "Fegatini di Pollo",
+    "description": "Chicken liver pate with onion and tomato jam, served with sourdough bread.",
+    "price": 4.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter5",
+    "category": "Starters",
+    "name": "Arancini Bolognese",
+    "description": "Fried arborio risotto rice with Bolognese sauce and mozzarella.",
+    "price": 6.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter6",
+    "category": "Starters",
+    "name": "Tartare di Filetto",
+    "description": "Beef tenderloin tartare.",
+    "price": 7.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter7",
+    "category": "Starters",
+    "name": "Carpaccio di Tonno",
+    "description": "Tuna saku carpaccio with olive oil vinaigrette.",
+    "price": 7.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter8",
+    "category": "Starters",
+    "name": "Caesar Salad",
+    "description": "Chicken, mixed salad, croutons and Parmesan cheese.",
+    "price": 7.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter9",
+    "category": "Starters",
+    "name": "Insalata di Tonno",
+    "description": "Fresh seared saku tuna, tomatoes and mixed salad.",
+    "price": 7.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter11",
+    "category": "Starters",
+    "name": "Salumi Misti",
+    "description": "Cold-cut platter: Parma ham, mortadella, spicy salami, cooked ham and truffle salami.",
+    "price": 12.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "starter12",
+    "category": "Starters",
+    "name": "Piatto di Formaggi",
+    "description": "Cheese platter: Gorgonzola, Taleggio, Parmesan and spicy Pecorino.",
+    "price": 12.5,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Starters serving suggestion"
+  },
+  {
+    "id": "pasta0",
+    "category": "Pasta",
+    "name": "Tagliolini al Pesto",
+    "description": "Homemade tagliolini with fresh basil pesto.",
+    "price": 6.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta1",
+    "category": "Pasta",
+    "name": "Tagliolini alla Carbonara",
+    "description": "Guanciale, egg yolk and Parmesan cheese.",
+    "price": 8.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta2",
+    "category": "Pasta",
+    "name": "Tagliatelle allo Scoglio",
+    "description": "Homemade tagliatelle with prawns, squid, white clams, white wine and cherry tomatoes.",
+    "price": 12.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta3",
+    "category": "Pasta",
+    "name": "Tagliatelle al Nero di Seppia",
+    "description": "Black-ink tagliatelle with white clams and white wine.",
+    "price": 8.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta4",
+    "category": "Pasta",
+    "name": "Tagliatelle alla Bolognese",
+    "description": "Homemade tagliatelle with Bolognese sauce.",
+    "price": 9.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta5",
+    "category": "Pasta",
+    "name": "Pappardelle con le Polpette",
+    "description": "Homemade pappardelle with meatballs and tomato sauce.",
+    "price": 8.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta6",
+    "category": "Pasta",
+    "name": "Gnocchi alla Sorrentina",
+    "description": "Homemade potato gnocchi, oven-baked with fresh mozzarella and tomatoes.",
+    "price": 8.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta7",
+    "category": "Pasta",
+    "name": "Gnocchi al Tartufo",
+    "description": "Homemade potato gnocchi with truffle paste, guanciale and mushrooms.",
+    "price": 12,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta8",
+    "category": "Pasta",
+    "name": "Tagliolini al Tartufo",
+    "description": "Homemade tagliolini with fresh Italian summer truffles.",
+    "price": 18.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta9",
+    "category": "Pasta",
+    "name": "Tortelloni",
+    "description": "Handmade tortelloni filled with pork, mortadella and cooked ham, in sweet garlic sauce.",
+    "price": 12.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta10",
+    "category": "Pasta",
+    "name": "Ravioli Ricotta e Spinaci",
+    "description": "Ricotta and spinach ravioli.",
+    "price": 7.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta11",
+    "category": "Pasta",
+    "name": "Lasagna",
+    "description": "Oven-baked homemade lasagna with Bolognese sauce, bechamel and Parmesan.",
+    "price": 12,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pasta12",
+    "category": "Pasta",
+    "name": "Tagliolini all'Arrabbiata",
+    "description": "Homemade tagliolini with tomato sauce and chilli.",
+    "price": 6.5,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pasta serving suggestion"
+  },
+  {
+    "id": "pizza0",
+    "category": "Pizza",
+    "name": "Marinara",
+    "description": "Tomato sauce, garlic and oregano.",
+    "price": 6,
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pizza serving suggestion"
+  },
+  {
+    "id": "pizza1",
+    "category": "Pizza",
+    "name": "Bianca",
+    "description": "White pizza with olive oil and rosemary.",
+    "price": 4,
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pizza serving suggestion"
+  },
+  {
+    "id": "pizza2",
+    "category": "Pizza",
+    "name": "Napoletana",
+    "description": "Tomato sauce, anchovies, capers, olives and fresh mozzarella.",
+    "price": 12,
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pizza serving suggestion"
+  },
+  {
+    "id": "pizza3",
+    "category": "Pizza",
+    "name": "Margherita",
+    "description": "Tomato sauce, fresh basil and fresh mozzarella.",
+    "price": 10,
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pizza serving suggestion"
+  },
+  {
+    "id": "pizza4",
+    "category": "Pizza",
+    "name": "Prosciutto e Funghi",
+    "description": "Cooked ham, mixed mushrooms and mozzarella.",
+    "price": 12,
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pizza serving suggestion"
+  },
+  {
+    "id": "pizza5",
+    "category": "Pizza",
+    "name": "Di Parma",
+    "description": "Tomato sauce, Parma ham, rocket salad and Parmesan shavings.",
+    "price": 14,
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pizza serving suggestion"
+  },
+  {
+    "id": "pizza6",
+    "category": "Pizza",
+    "name": "Burrata e Tartufo",
+    "description": "Burrata, fresh black truffle and fresh mozzarella.",
+    "price": 25,
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pizza serving suggestion"
+  },
+  {
+    "id": "pizza7",
+    "category": "Pizza",
+    "name": "Salame Piccante",
+    "description": "Tomato sauce, spicy spianata salami and fresh mozzarella.",
+    "price": 12,
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pizza serving suggestion"
+  },
+  {
+    "id": "pizza8",
+    "category": "Pizza",
+    "name": "Calzone",
+    "description": "",
+    "price": 12,
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Pizza serving suggestion"
+  },
+  {
+    "id": "main0",
+    "category": "Main courses",
+    "name": "Filetto di Spigola alla Griglia",
+    "description": "Grilled sea bass fillet with pesto spaghetti, zucchini and mashed potatoes.",
+    "price": 12.5,
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Main courses serving suggestion"
+  },
+  {
+    "id": "main1",
+    "category": "Main courses",
+    "name": "Lombatello",
+    "description": "Grilled hanger steak with grilled broccoli, mixed salad and French fries.",
+    "price": 25,
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Main courses serving suggestion"
+  },
+  {
+    "id": "main2",
+    "category": "Main courses",
+    "name": "Bistecca di Manzo",
+    "description": "Grilled rib-eye steak with mashed potatoes, long beans and mixed salad.",
+    "price": 28,
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Main courses serving suggestion"
+  },
+  {
+    "id": "main3",
+    "category": "Main courses",
+    "name": "Costata di Manzo",
+    "description": "Slow-cooked beef rib in red wine sauce, with broccoli and sweet potato mash.",
+    "price": 25,
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Main courses serving suggestion"
+  },
+  {
+    "id": "main4",
+    "category": "Main courses",
+    "name": "Filetto di Maiale",
+    "description": "Slow-cooked, grilled pork tenderloin with pineapple salsa, roasted pumpkin and baby potatoes.",
+    "price": 12.5,
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Main courses serving suggestion"
+  },
+  {
+    "id": "main5",
+    "category": "Main courses",
+    "name": "Pollo alla Griglia",
+    "description": "Half a roasted local spring chicken with white cabbage, roasted pumpkin and grilled lime.",
+    "price": 12.5,
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Main courses serving suggestion"
+  },
+  {
+    "id": "main6",
+    "category": "Main courses",
+    "name": "Filetto di Tonno Rosso",
+    "description": "Tuna saku fillet with rosemary sauce and sweet potato mash.",
+    "price": 12.5,
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Main courses serving suggestion"
+  },
+  {
+    "id": "dessert0",
+    "category": "Desserts",
+    "name": "Cioccolato Fondente",
+    "description": "Chocolate fondant.",
+    "price": 6,
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Desserts serving suggestion"
+  },
+  {
+    "id": "dessert1",
+    "category": "Desserts",
+    "name": "Tiramisu",
+    "description": "",
+    "price": 6,
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Desserts serving suggestion"
+  },
+  {
+    "id": "dessert2",
+    "category": "Desserts",
+    "name": "Panna Cotta",
+    "description": "",
+    "price": 6,
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80",
+    "imageAlt": "Desserts serving suggestion"
+  }
+]

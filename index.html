@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#7f2027" />
+    <meta
+      name="description"
+      content="Explore La Pizza's Italian menu. Browse starters, homemade pasta, pizza, main courses and desserts."
+    />
+    <title>La Pizza · A little taste of Italy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css?v=2-food-photos-restored" rel="stylesheet" />
+    <link rel="stylesheet" href="ui-versions.css" />
+    <script type="module" src="src/version-switcher.js"></script>
+  </head>
+  <body class="menu-v2">
+    <dialog id="bookCover" aria-label="La Pizza menu cover">
+      <button
+        id="openBook"
+        type="button"
+        aria-label="Open the food menu. Tap or swipe left."
+        autofocus
+      >
+        <img
+          src="assets/images/menu-cover.png"
+          width="1272"
+          height="1800"
+          alt="La Pizza. Cucina Italiana. Food menu. Phnom Penh, established 2026."
+          fetchpriority="high"
+        />
+        <span class="cover-cuisine" aria-hidden="true">CUCINA ITALIANA</span>
+        <span class="cover-prompt"
+          >Tap to open <span aria-hidden="true">·</span> Swipe left
+          <span aria-hidden="true">←</span></span
+        >
+      </button>
+    </dialog>
+    <a class="skip" href="#menu">Skip to menu</a>
+    <main>
+      <section id="menu" class="menu-section" aria-label="Food menu">
+        <nav
+          id="categories"
+          class="book-tabs"
+          aria-label="Menu category page tabs"
+        ></nav>
+        <div class="book-page">
+          <div class="controls">
+            <div class="category-summary">
+              <h1 id="categoryTitle" tabindex="-1">All dishes</h1>
+              <span id="resultCount" role="status" aria-live="polite"></span>
+            </div>
+
+            <label class="search"
+              ><svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <circle cx="10" cy="10" r="6.5" />
+                <path d="m15 15 6 6" /></svg
+              ><input
+                id="search"
+                type="search"
+                placeholder="Find a dish or ingredient"
+                aria-label="Search dishes and ingredients"
+              /><kbd>/</kbd></label
+            >
+          </div>
+          <div class="section-line">
+            <div class="menu-actions">
+              <div
+                id="menuView"
+                class="view-switch"
+                role="group"
+                aria-label="Menu view"
+              >
+                <button
+                  type="button"
+                  data-menu-view="grid"
+                  aria-pressed="false"
+                  aria-controls="dishes"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <rect x="2" y="2" width="6" height="6" rx="1" />
+                    <rect x="12" y="2" width="6" height="6" rx="1" />
+                    <rect x="2" y="12" width="6" height="6" rx="1" />
+                    <rect x="12" y="12" width="6" height="6" rx="1" />
+                  </svg>
+                  Grid
+                </button>
+                <button
+                  type="button"
+                  data-menu-view="list"
+                  aria-pressed="true"
+                  aria-controls="dishes"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 4h11M7 10h11M7 16h11" />
+                    <path d="M2 4h2M2 10h2M2 16h2" stroke-width="2" />
+                  </svg>
+                  List
+                </button>
+              </div>
+            </div>
+          </div>
+          <noscript
+            ><p>
+              Please enable JavaScript to browse the menu, or ask our team for a
+              menu.
+            </p></noscript
+          >
+          <div id="dishes" class="dish-grid dish-list"></div>
+          <div id="empty" hidden>
+            <span>⌕</span>
+            <h3>No dishes found</h3>
+            <p>Try another ingredient or explore the full menu.</p>
+            <button id="reset">Show all dishes</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <dialog id="detail" aria-labelledby="detailName">
+      <button class="close" aria-label="Close dish details">×</button>
+      <p class="eyebrow" id="detailCategory"></p>
+      <div class="detail-art" aria-hidden="true">✦</div>
+      <h2 id="detailName"></h2>
+      <p id="detailDescription"></p>
+      <div class="detail-bottom">
+        <strong id="detailPrice"></strong><button id="detailSave"></button>
+      </div>
+      <p class="detail-note">
+        Please speak with our team to order or ask about allergens.
+      </p>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="src/main.js?v=2-no-saved-filter"></script>
+  </body>
+</html>

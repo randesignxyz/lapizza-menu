@@ -1,0 +1,22 @@
+{
+  "version": "UI V1",
+  "files": {
+    ".gitignore": "8f532045570ca7d65ba81446683f341d7f25fbea391218b05b6e6dd80e37f382",
+    ".prettierrc.json": "e51419e8206a0a5493e85ef1f4dea080982dc9187992bb253220a93d0784f6b2",
+    "README.md": "ddf5b6682122ea7d908cf522d15cc7aa98588f4b6fa4b19af81d73a810adbad7",
+    "assets/images/dish-placeholder.svg": "54d4bcef80a4af792e6b9fd825a2d6c4f4e509eb495db17b7356fbb6cbb82eac",
+    "index.html": "85d3446bc879c5afe37bab5989d469b94013347f1d4419757156d9b07d082ccb",
+    "menu.json": "3fdc5405b85c4bbbe76b1a1685d6d679fda856b8185c56a7fc1992c7c6870f52",
+    "package.json": "8c2f7a1432c4ddbf3bc333e5d3111468be5f62b729a17df2d963103af28d5591",
+    "src/carousel/index.js": "773f3f45d2f9f9e36ea6af285dffa01c36ce391bae8cc09669bd579c3aeb2f82",
+    "src/main.js": "dd0ae1caec690ea86b9c9dd26031ce4c95878d6db639a7c43787f29a747b919c",
+    "src/menu/controller.js": "7ab979ba65766914ebedcc6b3b53912df5b04dc5596c534a51a2f980d2b78e42",
+    "src/menu/layout.js": "77961e05d790a8a174f88ac67b2da4af6782b6f9a4210045d4223b8cea402656",
+    "src/menu/model.js": "4d2bfd12c53e0ae49e0b9ab4873f5c6f3390e036a01c7de727ef328e844f760a",
+    "src/menu/repository.js": "2e8367f120d3daa5ad6a21dd456f8282b887dcd03538b4ad83a524377999aa5f",
+    "src/menu/storage.js": "3f1f7554285d85590b9e8e7c8375a39e6acfe44a0219f9d1cc776bf3bc2493a9",
+    "src/menu/view.js": "c907c14d275f7c33d3ba499f79d91dcfce734f959aec12d4134852f0c3594830",
+    "style.css": "6c83ca06d9c00eeb804b99a1fe5c9b86882b5e9bf1bd4207588236b4f04ee356",
+    "tests/menu.test.js": "9ab3b01eb8a45b4f87efeda3f12bd825cbc17c271c69581d20ae582f47e3afd2"
+  }
+}

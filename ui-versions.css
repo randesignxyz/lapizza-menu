@@ -1,0 +1,70 @@
+.ui-version-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px 16px;
+  background: #292722;
+  color: #fffdf8;
+  font-family: Poppins, Arial, sans-serif;
+  overflow: visible;
+}
+.ui-version-label {
+  margin-right: 12px;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #d8d0c2;
+}
+.ui-version-tabs a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 62px;
+  min-height: 40px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #fffdf8;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ui-version-tabs a:hover {
+  background: #ffffff18;
+}
+.ui-version-tabs a[aria-current='page'] {
+  background: #f8f4eb;
+  color: #7f2027;
+}
+.ui-version-tabs a:focus-visible {
+  outline: 3px solid #e0b468;
+  outline-offset: 1px;
+}
+body > .ui-version-tabs ~ main .controls {
+  top: 48px;
+}
+#bookCover {
+  padding-top: 64px;
+}
+#bookCover > .ui-version-tabs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#bookCover #openBook {
+  width: min(100%, 650px, calc((100dvh - 80px) * 0.706667));
+}
+@media (max-width: 600px) {
+  #bookCover {
+    padding-top: 58px;
+  }
+  #bookCover #openBook {
+    width: min(100%, calc((100dvh - 68px) * 0.706667));
+  }
+}
