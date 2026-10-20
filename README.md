@@ -59,4 +59,4 @@ Category selection animates the V2 page around its left spine before revealing t
 
 Category turns last 1.05 seconds. The incoming page renders immediately under an inert visual snapshot of the outgoing page, so it stays visible while the old sheet opens. Snapshots are removed after completion or cancellation and do not duplicate IDs or interactive controls in the accessibility tree.
 
-V2 now opens directly to the menu by default. Cover artwork and interaction code are retained but the cover is not initialized at startup.
+V2 opens with the menu cover by default. Tap or swipe left to open the menu. The UI preview switcher is hidden in the main entry page; V1 remains available at `versions/v1/index.html`.

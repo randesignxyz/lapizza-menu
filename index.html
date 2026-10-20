@@ -15,9 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link href="style.css?v=2-food-photos-restored" rel="stylesheet" />
-    <link rel="stylesheet" href="ui-versions.css" />
-    <script type="module" src="src/version-switcher.js"></script>
+    <link href="style.css?v=2-animation-heading-styles" rel="stylesheet" />
   </head>
   <body class="menu-v2">
     <dialog id="bookCover" aria-label="La Pizza menu cover">
@@ -52,8 +50,15 @@
         <div class="book-page">
           <div class="controls">
             <div class="category-summary">
-              <h1 id="categoryTitle" tabindex="-1">All dishes</h1>
-              <span id="resultCount" role="status" aria-live="polite"></span>
+              <h1 id="categoryTitle" class="category-title" tabindex="-1">
+                All dishes
+              </h1>
+              <span
+                id="resultCount"
+                class="result-count"
+                role="status"
+                aria-live="polite"
+              ></span>
             </div>
 
             <label class="search"
@@ -156,6 +161,6 @@
       </p>
     </dialog>
     <div id="toast" role="status" aria-live="polite"></div>
-    <script type="module" src="src/main.js?v=2-no-saved-filter"></script>
+    <script type="module" src="src/main.js?v=2-reveal-menu"></script>
   </body>
 </html>

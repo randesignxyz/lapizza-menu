@@ -312,7 +312,7 @@ h3 {
   font-weight: 500;
   letter-spacing: -0.5px;
 }
-#resultCount {
+.result-count {
   color: var(--muted);
   font-size: 10px;
 }
@@ -1181,11 +1181,11 @@ body:has(dialog[open]) {
   max-width: none;
   height: 100%;
   max-height: none;
-  padding: 16px;
+  padding: 0;
   margin: 0;
   border: 0;
   border-radius: 0;
-  background: #e9e2d5;
+  background: #f5efdf;
   overflow: hidden;
   perspective: 1800px;
 }
@@ -1212,8 +1212,8 @@ body:has(dialog[open]) {
     0 18px 48px #30241530;
   transform-origin: left center;
   transition:
-    transform 0.65s ease-in-out,
-    opacity 0.65s ease-in-out;
+    transform 1.05s ease-in-out,
+    opacity 1.05s ease-in-out;
   touch-action: pan-y;
   backface-visibility: hidden;
 }
@@ -1278,16 +1278,28 @@ body:has(dialog[open]) {
   font-size: clamp(10px, 1.8vh, 16px);
   letter-spacing: 0.17em;
 }
-/* Preserve the printed page ratio on short screens and in landscape. */
-#openBook {
-  width: min(100%, 650px, calc((100dvh - 32px) * 0.706667));
-  height: auto;
-  max-height: none;
+/* Fit the full cover to the viewport without cropping the artwork. */
+#bookCover {
+  width: 100vw;
+  height: 100dvh;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
-@media (max-width: 600px) {
-  #openBook {
-    width: min(100%, calc((100dvh - 20px) * 0.706667));
-  }
+#openBook {
+  width: min(
+    100%,
+    calc(
+      (100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom)) *
+        0.706667
+    )
+  );
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: none;
+}
+#openBook:focus-visible {
+  outline-offset: -4px;
 }
 
 /* V2: colored index strips attached to the printed page edge. */
@@ -1488,7 +1500,7 @@ body:has(dialog[open]) {
 .menu-v2 main {
   padding-top: 16px;
 }
-.menu-v2 #categoryTitle {
+.menu-v2 .category-title {
   margin: 0;
   font-family: Poppins, Arial, sans-serif;
   font-size: 19px;
@@ -1500,7 +1512,7 @@ body:has(dialog[open]) {
   .menu-v2 main {
     padding-top: 8px;
   }
-  .menu-v2 #categoryTitle {
+  .menu-v2 .category-title {
     font-size: 17px;
   }
 }
@@ -1576,7 +1588,7 @@ body:has(dialog[open]) {
     gap: 3px;
     flex-direction: column;
   }
-  .menu-v2 #categoryTitle {
+  .menu-v2 .category-title {
     font-size: 16px;
   }
   .menu-v2 .search {
@@ -1598,21 +1610,21 @@ body:has(dialog[open]) {
   font-style: normal;
   font-display: swap;
 }
-.menu-v2 #categoryTitle,
+.menu-v2 .category-title,
 .menu-v2 .chapter-title {
   font-family: 'Bernard', 'Bernard MT Condensed', Georgia, serif;
   font-weight: 400;
   letter-spacing: 0;
 }
-.menu-v2 #categoryTitle {
+.menu-v2 .category-title {
   font-size: 28px;
 }
 @media (max-width: 600px) {
-  .menu-v2 #categoryTitle {
+  .menu-v2 .category-title {
     font-size: 24px;
   }
 }
-.menu-v2 #categoryTitle {
+.menu-v2 .category-title {
   color: var(--red);
 }
 
@@ -1632,4 +1644,13 @@ body:has(dialog[open]) {
 
 .menu-v2 .dish .save {
   display: none;
+}
+
+/* Let the live menu show through behind the turning cover. */
+#bookCover.is-opening {
+  background: transparent;
+}
+#bookCover.is-opening::backdrop {
+  background: transparent;
+  backdrop-filter: none;
 }

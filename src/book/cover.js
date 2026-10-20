@@ -14,10 +14,11 @@ export function initBookCover() {
   function openMenu() {
     if (opening || !dialog.open) return;
     opening = true;
+    window.scrollTo({ top: 0, behavior: 'instant' });
     dialog.classList.add('is-opening');
     const delay = window.matchMedia('(prefers-reduced-motion: reduce)').matches
       ? 0
-      : 650;
+      : 1050;
     window.setTimeout(() => {
       dialog.close();
       dialog.classList.remove('is-opening');
