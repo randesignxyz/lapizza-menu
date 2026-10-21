@@ -1,4 +1,4 @@
-export const money = (amount) => `$${amount.toFixed(2)}`;
+export const money = (amount) => amount === null ? '' : `$${amount.toFixed(2)}`;
 
 export function filterDishes(
   items,
@@ -34,8 +34,8 @@ export function validateMenu(data) {
       typeof dish.category !== 'string' ||
       !dish.category.trim() ||
       typeof dish.description !== 'string' ||
-      !Number.isFinite(dish.price) ||
-      dish.price < 0
+      (!(dish.category === 'Cocktails' && dish.price === null) &&
+        (!Number.isFinite(dish.price) || dish.price < 0))
     ) {
       throw new TypeError('Menu contains an invalid or duplicate dish');
     }

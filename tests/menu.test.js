@@ -68,3 +68,11 @@ test('favourites survive round trips and tolerate corrupt or unavailable storage
   assert.equal(readFavourites(blocked).size, 0);
   assert.doesNotThrow(() => writeFavourites(new Set(), blocked));
 });
+
+test('cocktails can omit prices while food still requires a valid price', () => {
+  const cocktail = menu.find((dish) => dish.category === 'Cocktails');
+  assert.ok(cocktail);
+  assert.equal(validateMenu([{ ...cocktail, price: null }]).length, 1);
+  assert.throws(() => validateMenu([{ ...menu[0], price: null }]), TypeError);
+  assert.throws(() => validateMenu([{ ...cocktail, price: -1 }]), TypeError);
+});

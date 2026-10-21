@@ -58,8 +58,8 @@
     "category": "Starters",
     "name": "Tartare di Filetto",
     "description": "Beef tenderloin tartare.",
-    "price": 7.5,
-    "image": "assets/images/Beef Tartare.jpg",
+    "price": 9.0,
+    "image": "assets/images/Beef Tartare in starter section is 9$.jpg",
     "imageAlt": "Tartare di Filetto"
   },
   {
@@ -67,8 +67,8 @@
     "category": "Starters",
     "name": "Carpaccio di Tonno",
     "description": "Tuna saku carpaccio with olive oil vinaigrette.",
-    "price": 7.5,
-    "image": "assets/images/Tuna. Carpaccio.jpg",
+    "price": 9.0,
+    "image": "assets/images/Tuna Carpaccio also 9$.jpg",
     "imageAlt": "Carpaccio di Tonno"
   },
   {
@@ -90,30 +90,12 @@
     "imageAlt": "Insalata di Tonno"
   },
   {
-    "id": "starter11",
-    "category": "Starters",
-    "name": "Salumi Misti",
-    "description": "Cold-cut platter: Parma ham, mortadella, spicy salami, cooked ham and truffle salami.",
-    "price": 12.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
-  },
-  {
-    "id": "starter12",
-    "category": "Starters",
-    "name": "Piatto di Formaggi",
-    "description": "Cheese platter: Gorgonzola, Taleggio, Parmesan and spicy Pecorino.",
-    "price": 12.5,
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Starters serving suggestion"
-  },
-  {
     "id": "pasta0",
     "category": "Pasta",
     "name": "Tagliolini al Pesto",
     "description": "Homemade tagliolini with fresh basil pesto.",
-    "price": 6.5,
-    "image": "assets/images/Foto to use for pesto.jpg",
+    "price": 7.5,
+    "image": "assets/images/Tagliolini pesto 7.50 $.jpg",
     "imageAlt": "Tagliolini al Pesto"
   },
   {
@@ -157,8 +139,8 @@
     "category": "Pasta",
     "name": "Pappardelle con le Polpette",
     "description": "Homemade pappardelle with meatballs and tomato sauce.",
-    "price": 8.5,
-    "image": "assets/images/Pappardelle meatball.jpg",
+    "price": 9.5,
+    "image": "assets/images/Pappardelle meatball 9.50$.jpg",
     "imageAlt": "Pappardelle con le Polpette"
   },
   {
@@ -178,15 +160,6 @@
     "price": 12,
     "image": "assets/images/Gnocchi truffle.jpg",
     "imageAlt": "Gnocchi al Tartufo"
-  },
-  {
-    "id": "pasta8",
-    "category": "Pasta",
-    "name": "Tagliolini al Tartufo",
-    "description": "Homemade tagliolini with fresh Italian summer truffles.",
-    "price": 18.5,
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Pasta serving suggestion"
   },
   {
     "id": "pasta9",
@@ -277,15 +250,6 @@
     "price": 14,
     "image": "assets/images/Pizza di Parma.jpg",
     "imageAlt": "Di Parma"
-  },
-  {
-    "id": "pizza6",
-    "category": "Pizza",
-    "name": "Burrata e Tartufo",
-    "description": "Burrata, fresh black truffle and fresh mozzarella.",
-    "price": 25,
-    "image": "assets/images/Pizza burrata cheese.jpg",
-    "imageAlt": "Burrata e Tartufo"
   },
   {
     "id": "pizza7",
@@ -392,7 +356,61 @@
     "name": "Panna Cotta",
     "description": "",
     "price": 6,
-    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80",
-    "imageAlt": "Desserts serving suggestion"
+    "image": "assets/images/Panna Cotta.jpg",
+    "imageAlt": "Panna Cotta"
+  },
+  {
+    "id": "cocktail0",
+    "category": "Cocktails",
+    "name": "La Dolce Vita",
+    "description": "Tanqueray Gin — 45 ml; Aperol — 15 ml; Passion Fruit — 20 ml; Lemon Juice — 20 ml; Simple Syrup — 10 ml; Monin Vanilla — 10 ml; Orange Juice — 15 ml; Top with Soda — 30 ml. Garnish: Rosemary. Glass: Highball.",
+    "price": null,
+    "image": "assets/images/la-dolce-vita.svg",
+    "imageAlt": "La Dolce Vita — sample cocktail illustration"
+  },
+  {
+    "id": "cocktail1",
+    "category": "Cocktails",
+    "name": "Passion Daiquiri",
+    "description": "Havana Club 3 Rum — 45 ml; Lime — 20 ml; Simple Syrup — 20 ml; Passion Fruit — 25 ml. Garnish: Lime Slice. Method: Shake & Strain. Glass: Martini Glass.",
+    "price": null,
+    "image": "assets/images/passion-daiquiri.svg",
+    "imageAlt": "Passion Daiquiri — sample cocktail illustration"
+  },
+  {
+    "id": "cocktail2",
+    "category": "Cocktails",
+    "name": "Classic Spritz",
+    "description": "Prosecco — 80 ml; Aperol — 50 ml; Soda Water — 30 ml. Garnish: Orange Wheel. Method: Build over ice. Glass: Large Burgundy/Balloon Glass.",
+    "price": null,
+    "image": "assets/images/classic-spritz.svg",
+    "imageAlt": "Classic Spritz — sample cocktail illustration"
+  },
+  {
+    "id": "cocktail3",
+    "category": "Cocktails",
+    "name": "Whisky Sour",
+    "description": "3 Monkey Whisky — 45 ml; Lemon — 25 ml; Simple Syrup — 15 ml; White egg — 30 ml; Angostura bitter — 3 dashes. Garnish: Lemon Twist. Glass: Rock Glass.",
+    "price": null,
+    "image": "assets/images/whisky-sour.svg",
+    "imageAlt": "Whisky Sour — sample cocktail illustration"
+  },
+  {
+    "id": "cocktail4",
+    "category": "Cocktails",
+    "name": "Expresso Martini",
+    "description": "Absolute Vodka — 45 ml; Kahlua — 20 ml; Expresso Coffee — 45 ml; Vanilla Monin — 5 ml. Garnish: 3 Coffee Bean Seed. Glass: Martini Glass.",
+    "price": null,
+    "image": "assets/images/expresso-martini.svg",
+    "imageAlt": "Expresso Martini — sample cocktail illustration"
+  },
+  {
+    "id": "cocktail5",
+    "category": "Cocktails",
+    "name": "Boulevardier",
+    "description": "3 Monkey Shoulder — 45 ml; Campari — 30 ml; Sweet Vermouth — 30 ml. Garnish: Orange Peel. Method: Stir with ice 20–30 sec, strain over fresh ice. Glass: Rock Glass.",
+    "price": null,
+    "image": "assets/images/boulevardier.svg",
+    "imageAlt": "Boulevardier — sample cocktail illustration"
   }
 ]
