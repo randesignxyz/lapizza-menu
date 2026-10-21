@@ -90,11 +90,11 @@ test('wine supports bottle and glass prices with valid amounts', () => {
 test('wine groups use the requested order, serving prices and original photos', () => {
   const groups = groupWines(menu);
   assert.deepEqual(groups.map((group) => group.name), [
-    'Red Wine by the Glass', 'White Wine by the Glass', 'Rosé Wine',
-    'Red Wine by the Bottle', 'White Wine by the Bottle',
+    'Red Wine by the Glass', 'Red Wine by the Bottle',
+    'White Wine by the Glass', 'White Wine by the Bottle', 'Rosé Wine',
   ]);
   const glass = groups[0].items.find((wine) => wine.id === 'wine0');
-  const bottle = groups[3].items.find((wine) => wine.id === 'wine0');
+  const bottle = groups[1].items.find((wine) => wine.id === 'wine0');
   assert.equal(glass.servingPrice, 5);
   assert.equal(bottle.servingPrice, 25);
   assert.equal(glass.image, bottle.image);
@@ -105,4 +105,20 @@ test('wine groups use the requested order, serving prices and original photos', 
     assert.ok(entries.every((entry) => entry.image === wine.image));
   }
   assert.equal(groupWines(filterDishes(menu, { query: 'Montepulciano' })).length, 2);
+});
+
+test('wine order is stable by serving price regardless of input order', () => {
+  const original = JSON.stringify(menu);
+  const groups = groupWines([...menu].reverse());
+  assert.deepEqual(groups, groupWines(menu));
+  for (const group of groups.filter((group) => group.name !== 'Rosé Wine')) {
+    const prices = group.items.map((wine) => wine.servingPrice);
+    assert.deepEqual(prices, [...prices].sort((a, b) => a - b));
+  }
+  const rose = groups.find((group) => group.name === 'Rosé Wine');
+  const prosecco = rose.items.filter((wine) => wine.id === 'wine10');
+  assert.deepEqual(prosecco.map((wine) => wine.serving), ['bottle', 'glass']);
+  const start = rose.items.findIndex((wine) => wine.id === 'wine10');
+  assert.equal(rose.items[start + 1].id, 'wine10');
+  assert.equal(JSON.stringify(menu), original);
 });

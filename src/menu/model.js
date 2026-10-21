@@ -57,16 +57,19 @@ export function groupWines(items) {
   const byType = (type, unit) => wines
     .filter((wine) => wine.wineType === type &&
       (unit !== 'glass' || wine.glassPrice !== undefined))
-    .map((wine) => serving(wine, unit));
+    .map((wine) => serving(wine, unit))
+    .sort((a, b) => a.servingPrice - b.servingPrice ||
+      a.name.localeCompare(b.name, 'en'));
   return [
     { name: 'Red Wine by the Glass', items: byType('red', 'glass') },
-    { name: 'White Wine by the Glass', items: byType('white', 'glass') },
-    { name: 'Rosé Wine', items: wines.filter((wine) => wine.wineType === 'rose')
-      .flatMap((wine) => [
-        ...(wine.glassPrice === undefined ? [] : [serving(wine, 'glass')]),
-        serving(wine, 'bottle'),
-      ]) },
     { name: 'Red Wine by the Bottle', items: byType('red', 'bottle') },
+    { name: 'White Wine by the Glass', items: byType('white', 'glass') },
     { name: 'White Wine by the Bottle', items: byType('white', 'bottle') },
+    { name: 'Rosé Wine', items: wines.filter((wine) => wine.wineType === 'rose')
+      .sort((a, b) => a.price - b.price || a.name.localeCompare(b.name, 'en'))
+      .flatMap((wine) => [
+        serving(wine, 'bottle'),
+        ...(wine.glassPrice === undefined ? [] : [serving(wine, 'glass')]),
+      ]) },
   ].filter((group) => group.items.length);
 }
