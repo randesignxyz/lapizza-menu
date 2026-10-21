@@ -412,5 +412,68 @@
     "price": 8,
     "image": "assets/images/boulevardier.svg",
     "imageAlt": "Boulevardier — sample cocktail illustration"
+  },
+  {
+    "id": "soft-drink-0",
+    "category": "Soft Drinks",
+    "name": "Kulen Water 1.5L",
+    "description": "Still mineral water, 1.5L.",
+    "price": 3,
+    "image": "assets/images/soft-drink-0.svg",
+    "imageAlt": "Kulen Water 1.5L — sample drink illustration"
+  },
+  {
+    "id": "soft-drink-1",
+    "category": "Soft Drinks",
+    "name": "Tonic Water",
+    "description": "",
+    "price": 2,
+    "image": "assets/images/soft-drink-1.svg",
+    "imageAlt": "Tonic Water — sample drink illustration"
+  },
+  {
+    "id": "soft-drink-2",
+    "category": "Soft Drinks",
+    "name": "Ginger Ale",
+    "description": "",
+    "price": 2,
+    "image": "assets/images/soft-drink-2.svg",
+    "imageAlt": "Ginger Ale — sample drink illustration"
+  },
+  {
+    "id": "soft-drink-3",
+    "category": "Soft Drinks",
+    "name": "Coke",
+    "description": "",
+    "price": 2,
+    "image": "assets/images/soft-drink-3.svg",
+    "imageAlt": "Coke — sample drink illustration"
+  },
+  {
+    "id": "soft-drink-4",
+    "category": "Soft Drinks",
+    "name": "Sprite",
+    "description": "",
+    "price": 2,
+    "image": "assets/images/soft-drink-4.svg",
+    "imageAlt": "Sprite — sample drink illustration"
+  },
+  {
+    "id": "soft-drink-5",
+    "category": "Soft Drinks",
+    "name": "Soda",
+    "description": "",
+    "price": 2,
+    "image": "assets/images/soft-drink-5.svg",
+    "imageAlt": "Soda — sample drink illustration"
+  },
+  {
+    "id": "soft-drink-6",
+    "category": "Soft Drinks",
+    "name": "San Pellegrino Sparkling Water",
+    "description": "Sparkling mineral water.",
+    "price": 5,
+    "image": "assets/images/soft-drink-6.svg",
+    "imageAlt": "San Pellegrino Sparkling Water — sample drink illustration"
   }
 ]

@@ -18,6 +18,7 @@ export async function initMenu() {
     'Main courses',
     'Desserts',
     'Cocktails',
+    'Soft Drinks',
   ];
   const saved = readFavourites();
   const $ = (id) => document.getElementById(id);
