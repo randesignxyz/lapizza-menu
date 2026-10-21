@@ -40,7 +40,7 @@
     "category": "Starters",
     "name": "Fegatini di Pollo",
     "description": "Chicken liver pate with onion and tomato jam, served with sourdough bread.",
-    "price": 4.5,
+    "price": 7,
     "image": "assets/images/Chicken liver Pate.jpg",
     "imageAlt": "Fegatini di Pollo"
   },
@@ -364,7 +364,7 @@
     "category": "Cocktails",
     "name": "La Dolce Vita",
     "description": "Tanqueray Gin — 45 ml; Aperol — 15 ml; Passion Fruit — 20 ml; Lemon Juice — 20 ml; Simple Syrup — 10 ml; Monin Vanilla — 10 ml; Orange Juice — 15 ml; Top with Soda — 30 ml. Garnish: Rosemary. Glass: Highball.",
-    "price": null,
+    "price": 8,
     "image": "assets/images/la-dolce-vita.svg",
     "imageAlt": "La Dolce Vita — sample cocktail illustration"
   },
@@ -373,7 +373,7 @@
     "category": "Cocktails",
     "name": "Passion Daiquiri",
     "description": "Havana Club 3 Rum — 45 ml; Lime — 20 ml; Simple Syrup — 20 ml; Passion Fruit — 25 ml. Garnish: Lime Slice. Method: Shake & Strain. Glass: Martini Glass.",
-    "price": null,
+    "price": 8,
     "image": "assets/images/passion-daiquiri.svg",
     "imageAlt": "Passion Daiquiri — sample cocktail illustration"
   },
@@ -382,7 +382,7 @@
     "category": "Cocktails",
     "name": "Classic Spritz",
     "description": "Prosecco — 80 ml; Aperol — 50 ml; Soda Water — 30 ml. Garnish: Orange Wheel. Method: Build over ice. Glass: Large Burgundy/Balloon Glass.",
-    "price": null,
+    "price": 8,
     "image": "assets/images/classic-spritz.svg",
     "imageAlt": "Classic Spritz — sample cocktail illustration"
   },
@@ -391,25 +391,25 @@
     "category": "Cocktails",
     "name": "Whisky Sour",
     "description": "3 Monkey Whisky — 45 ml; Lemon — 25 ml; Simple Syrup — 15 ml; White egg — 30 ml; Angostura bitter — 3 dashes. Garnish: Lemon Twist. Glass: Rock Glass.",
-    "price": null,
+    "price": 8,
     "image": "assets/images/whisky-sour.svg",
     "imageAlt": "Whisky Sour — sample cocktail illustration"
   },
   {
     "id": "cocktail4",
     "category": "Cocktails",
-    "name": "Expresso Martini",
+    "name": "Espresso Martini",
     "description": "Absolute Vodka — 45 ml; Kahlua — 20 ml; Expresso Coffee — 45 ml; Vanilla Monin — 5 ml. Garnish: 3 Coffee Bean Seed. Glass: Martini Glass.",
-    "price": null,
+    "price": 8,
     "image": "assets/images/expresso-martini.svg",
-    "imageAlt": "Expresso Martini — sample cocktail illustration"
+    "imageAlt": "Espresso Martini — sample cocktail illustration"
   },
   {
     "id": "cocktail5",
     "category": "Cocktails",
     "name": "Boulevardier",
     "description": "3 Monkey Shoulder — 45 ml; Campari — 30 ml; Sweet Vermouth — 30 ml. Garnish: Orange Peel. Method: Stir with ice 20–30 sec, strain over fresh ice. Glass: Rock Glass.",
-    "price": null,
+    "price": 8,
     "image": "assets/images/boulevardier.svg",
     "imageAlt": "Boulevardier — sample cocktail illustration"
   }
