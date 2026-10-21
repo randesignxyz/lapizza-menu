@@ -1,4 +1,4 @@
-import { money } from './model.js';
+import { money, groupWines } from './model.js';
 
 function make(tag, cls, text) {
   let e = document.createElement(tag);
@@ -23,7 +23,9 @@ export function createDishCard(d, { saved, onToggle }) {
   let desc = make('p', '', d.description || 'Ask our team for more details.');
   let bottom = make('div', 'dish-bottom');
   if (d.price !== null) {
-    const price = d.glassPrice === undefined
+    const price = d.serving
+      ? `${money(d.servingPrice)} / ${d.serving}`
+      : d.glassPrice === undefined
       ? `${money(d.price)}${d.category === 'Wine' ? ' / bottle' : ''}`
       : `${money(d.price)} / bottle · ${money(d.glassPrice)} / glass`;
     bottom.append(make('span', 'price', price));
@@ -76,10 +78,23 @@ export function createMenuChapters(
     } else {
       chapter.setAttribute('aria-label', category);
     }
-    const list = make('div', 'chapter-dishes');
-    list.append(...dishes.map((dish) => createDishCard(dish, actions)));
     if (showHeadings) chapter.append(heading);
-    chapter.append(list);
+    if (category === 'Wine') {
+      for (const [groupIndex, group] of groupWines(dishes).entries()) {
+        const section = make('section', 'menu-chapter');
+        const groupHeading = make('h4', 'chapter-title', group.name);
+        groupHeading.id = `wine-group-${groupIndex}`;
+        section.setAttribute('aria-labelledby', groupHeading.id);
+        const list = make('div', 'chapter-dishes');
+        list.append(...group.items.map((dish) => createDishCard(dish, actions)));
+        section.append(groupHeading, list);
+        chapter.append(section);
+      }
+    } else {
+      const list = make('div', 'chapter-dishes');
+      list.append(...dishes.map((dish) => createDishCard(dish, actions)));
+      chapter.append(list);
+    }
     return [chapter];
   });
 }

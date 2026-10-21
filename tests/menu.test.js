@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { filterDishes, validateMenu, money } from '../src/menu/model.js';
+import { filterDishes, validateMenu, money, groupWines } from '../src/menu/model.js';
 import { readFavourites, writeFavourites } from '../src/menu/storage.js';
 
 const menu = JSON.parse(
@@ -85,4 +85,24 @@ test('wine supports bottle and glass prices with valid amounts', () => {
   for (const glassPrice of [-1, NaN, '5']) {
     assert.throws(() => validateMenu([{ ...wine, glassPrice }]), TypeError);
   }
+});
+
+test('wine groups use the requested order, serving prices and original photos', () => {
+  const groups = groupWines(menu);
+  assert.deepEqual(groups.map((group) => group.name), [
+    'Red Wine by the Glass', 'White Wine by the Glass', 'Rosé Wine',
+    'Red Wine by the Bottle', 'White Wine by the Bottle',
+  ]);
+  const glass = groups[0].items.find((wine) => wine.id === 'wine0');
+  const bottle = groups[3].items.find((wine) => wine.id === 'wine0');
+  assert.equal(glass.servingPrice, 5);
+  assert.equal(bottle.servingPrice, 25);
+  assert.equal(glass.image, bottle.image);
+  for (const wine of menu.filter((dish) => dish.category === 'Wine')) {
+    const entries = groups.flatMap((group) => group.items)
+      .filter((entry) => entry.id === wine.id);
+    assert.equal(entries.length, wine.glassPrice === undefined ? 1 : 2);
+    assert.ok(entries.every((entry) => entry.image === wine.image));
+  }
+  assert.equal(groupWines(filterDishes(menu, { query: 'Montepulciano' })).length, 2);
 });

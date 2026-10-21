@@ -45,3 +45,28 @@ export function validateMenu(data) {
   }
   return data;
 }
+
+// Serving entries share the original ID, photo and favourite state.
+export function groupWines(items) {
+  const wines = items.filter((dish) => dish.category === 'Wine');
+  const serving = (wine, unit) => ({
+    ...wine,
+    serving: unit,
+    servingPrice: unit === 'glass' ? wine.glassPrice : wine.price,
+  });
+  const byType = (type, unit) => wines
+    .filter((wine) => wine.wineType === type &&
+      (unit !== 'glass' || wine.glassPrice !== undefined))
+    .map((wine) => serving(wine, unit));
+  return [
+    { name: 'Red Wine by the Glass', items: byType('red', 'glass') },
+    { name: 'White Wine by the Glass', items: byType('white', 'glass') },
+    { name: 'Rosé Wine', items: wines.filter((wine) => wine.wineType === 'rose')
+      .flatMap((wine) => [
+        ...(wine.glassPrice === undefined ? [] : [serving(wine, 'glass')]),
+        serving(wine, 'bottle'),
+      ]) },
+    { name: 'Red Wine by the Bottle', items: byType('red', 'bottle') },
+    { name: 'White Wine by the Bottle', items: byType('white', 'bottle') },
+  ].filter((group) => group.items.length);
+}
