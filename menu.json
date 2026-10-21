@@ -419,8 +419,8 @@
     "name": "Kulen Water 1.5L",
     "description": "Still mineral water, 1.5L.",
     "price": 3,
-    "image": "assets/images/soft-drink-0.svg",
-    "imageAlt": "Kulen Water 1.5L — sample drink illustration"
+    "image": "assets/images/Kulen 1500ml.jpg",
+    "imageAlt": "Kulen Water 1.5L"
   },
   {
     "id": "soft-drink-1",
@@ -428,8 +428,8 @@
     "name": "Tonic Water",
     "description": "",
     "price": 2,
-    "image": "assets/images/soft-drink-1.svg",
-    "imageAlt": "Tonic Water — sample drink illustration"
+    "image": "assets/images/Tonic Water.jpg",
+    "imageAlt": "Tonic Water"
   },
   {
     "id": "soft-drink-2",
@@ -437,8 +437,8 @@
     "name": "Ginger Ale",
     "description": "",
     "price": 2,
-    "image": "assets/images/soft-drink-2.svg",
-    "imageAlt": "Ginger Ale — sample drink illustration"
+    "image": "assets/images/Ginger Ale.jpg",
+    "imageAlt": "Ginger Ale"
   },
   {
     "id": "soft-drink-3",
@@ -446,8 +446,8 @@
     "name": "Coke",
     "description": "",
     "price": 2,
-    "image": "assets/images/soft-drink-3.svg",
-    "imageAlt": "Coke — sample drink illustration"
+    "image": "assets/images/Coke.jpg",
+    "imageAlt": "Coke"
   },
   {
     "id": "soft-drink-4",
@@ -455,8 +455,8 @@
     "name": "Sprite",
     "description": "",
     "price": 2,
-    "image": "assets/images/soft-drink-4.svg",
-    "imageAlt": "Sprite — sample drink illustration"
+    "image": "assets/images/Sprite.jpg",
+    "imageAlt": "Sprite"
   },
   {
     "id": "soft-drink-5",
@@ -473,7 +473,7 @@
     "name": "San Pellegrino Sparkling Water",
     "description": "Sparkling mineral water.",
     "price": 5,
-    "image": "assets/images/soft-drink-6.svg",
-    "imageAlt": "San Pellegrino Sparkling Water — sample drink illustration"
+    "image": "assets/images/San Pellegrino Sparkling Water.jpg",
+    "imageAlt": "San Pellegrino Sparkling Water"
   }
 ]
