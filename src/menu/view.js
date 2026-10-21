@@ -22,7 +22,12 @@ export function createDishCard(d, { saved, onToggle }) {
   let title = make('h5', 'dish-name', d.name);
   let desc = make('p', '', d.description || 'Ask our team for more details.');
   let bottom = make('div', 'dish-bottom');
-  if (d.price !== null) bottom.append(make('span', 'price', money(d.price)));
+  if (d.price !== null) {
+    const price = d.glassPrice === undefined
+      ? `${money(d.price)}${d.category === 'Wine' ? ' / bottle' : ''}`
+      : `${money(d.price)} / bottle · ${money(d.glassPrice)} / glass`;
+    bottom.append(make('span', 'price', price));
+  }
   const imageContainer = make('div', 'dish-image-button');
   const image = document.createElement('img');
   image.className = 'dish-image';

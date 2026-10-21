@@ -475,5 +475,109 @@
     "price": 5,
     "image": "assets/images/San Pellegrino Sparkling Water.jpg",
     "imageAlt": "San Pellegrino Sparkling Water"
+  },
+  {
+    "id": "wine0",
+    "category": "Wine",
+    "name": "Montepulciano d’Abruzzo",
+    "description": "Red wine. Available by the bottle or glass.",
+    "price": 25,
+    "glassPrice": 5,
+    "image": "assets/images/Montepulciano D abruzzo.jpg",
+    "imageAlt": "Montepulciano d’Abruzzo wine bottle"
+  },
+  {
+    "id": "wine1",
+    "category": "Wine",
+    "name": "Sangiovese",
+    "description": "Red wine. Available by the bottle or glass.",
+    "price": 25,
+    "glassPrice": 5,
+    "image": "assets/images/Sangiovese.jpg",
+    "imageAlt": "Sangiovese wine bottle"
+  },
+  {
+    "id": "wine2",
+    "category": "Wine",
+    "name": "Trebbiano d’Abruzzo",
+    "description": "White wine. Available by the bottle or glass.",
+    "price": 25,
+    "glassPrice": 5,
+    "image": "assets/images/Trebbiano D Abruzzo white wine.jpg",
+    "imageAlt": "Trebbiano d’Abruzzo white wine bottle"
+  },
+  {
+    "id": "wine3",
+    "category": "Wine",
+    "name": "Greco di Tufo",
+    "description": "White wine. Available by the bottle or glass.",
+    "price": 38,
+    "glassPrice": 7,
+    "image": "assets/images/Greco di Tufo.jpg",
+    "imageAlt": "Greco di Tufo wine bottle"
+  },
+  {
+    "id": "wine4",
+    "category": "Wine",
+    "name": "Pecorino",
+    "description": "White wine. Available by the bottle.",
+    "price": 42,
+    "image": "assets/images/Pecorno.jpg",
+    "imageAlt": "Pecorino wine bottle"
+  },
+  {
+    "id": "wine5",
+    "category": "Wine",
+    "name": "Rosé Merlot",
+    "description": "Rosé wine. Available by the bottle.",
+    "price": 30,
+    "image": "assets/images/Rose Merlot.jpg",
+    "imageAlt": "Rosé Merlot wine bottle"
+  },
+  {
+    "id": "wine6",
+    "category": "Wine",
+    "name": "Col di Sasso",
+    "description": "Red wine. Available by the bottle.",
+    "price": 30,
+    "image": "assets/images/Col di Sasso.jpg",
+    "imageAlt": "Col di Sasso wine bottle"
+  },
+  {
+    "id": "wine7",
+    "category": "Wine",
+    "name": "Chianti Don Giovanni",
+    "description": "Red wine. Available by the bottle.",
+    "price": 36,
+    "image": "assets/images/Chianti Don Giovanni .jpg",
+    "imageAlt": "Chianti Don Giovanni wine bottle"
+  },
+  {
+    "id": "wine8",
+    "category": "Wine",
+    "name": "Cum Laude Supertoscan",
+    "description": "Red wine. Available by the bottle.",
+    "price": 70,
+    "image": "assets/images/Cum Laude Supertoscan.jpg",
+    "imageAlt": "Cum Laude Supertoscan wine bottle"
+  },
+  {
+    "id": "wine9",
+    "category": "Wine",
+    "name": "Brunello di Montalcino “The King”",
+    "description": "Red wine. Available by the bottle.",
+    "price": 120,
+    "image": "assets/images/Brunello di Montalcino '' the king\".jpg",
+    "imageAlt": "Brunello di Montalcino “The King” wine bottle"
+  },
+  {
+    "id": "wine10",
+    "category": "Wine",
+    "name": "Prosecco Rosé",
+    "description": "Sparkling rosé wine. Available by the bottle or glass.",
+    "price": 30,
+    "glassPrice": 6,
+    "image": "assets/images/Prosecco Rose.jpg",
+    "imageAlt": "Prosecco Rosé wine bottle"
   }
 ]

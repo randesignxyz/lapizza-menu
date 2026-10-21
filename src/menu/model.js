@@ -34,6 +34,8 @@ export function validateMenu(data) {
       typeof dish.category !== 'string' ||
       !dish.category.trim() ||
       typeof dish.description !== 'string' ||
+      (dish.glassPrice !== undefined &&
+        (!Number.isFinite(dish.glassPrice) || dish.glassPrice < 0)) ||
       (!(dish.category === 'Cocktails' && dish.price === null) &&
         (!Number.isFinite(dish.price) || dish.price < 0))
     ) {

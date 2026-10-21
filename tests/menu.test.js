@@ -76,3 +76,13 @@ test('cocktails can omit prices while food still requires a valid price', () => 
   assert.throws(() => validateMenu([{ ...menu[0], price: null }]), TypeError);
   assert.throws(() => validateMenu([{ ...cocktail, price: -1 }]), TypeError);
 });
+
+test('wine supports bottle and glass prices with valid amounts', () => {
+  const wine = menu.find((dish) => dish.id === 'wine0');
+  assert.equal(wine.price, 25);
+  assert.equal(wine.glassPrice, 5);
+  assert.equal(validateMenu([wine]).length, 1);
+  for (const glassPrice of [-1, NaN, '5']) {
+    assert.throws(() => validateMenu([{ ...wine, glassPrice }]), TypeError);
+  }
+});
